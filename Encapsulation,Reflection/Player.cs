@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Data;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -14,7 +15,32 @@ namespace Encapsulation_Reflection
         public string Name { get; }
         public string Team { get; private set; }
         public int ContractTo { get; set; }
-        public int Salary { get; set; }
+
+        #region Logik implementerad i get-och set-blocken
+        //  Du kan ej hämta ut ett värde som mindre än 0 och du kan ej sätta ett värde som är mindre än 0
+        // Notera att vad som är private och vad som är public.
+        private int _Salary = 0;
+        public int Salary
+        {
+            get
+            {
+                if (_Salary < 0)
+                {
+                    throw new NoNullAllowedException();
+                }
+                return _Salary;
+            }
+            set
+            {
+                if (value < 0)
+                {
+                    throw new NoNullAllowedException();
+                }
+                this._Salary = value;
+            }
+        } 
+        #endregion
+
 
         // Konstruktor
         public Player(string name)
