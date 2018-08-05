@@ -4,10 +4,10 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{20F9CE71-E059-409F-B364-119A17B3F5D1}</ProjectGuid>
+    <ProjectGuid>{4750F2C8-5236-48F3-8378-D92CC32B4828}</ProjectGuid>
     <OutputType>Exe</OutputType>
-    <RootNamespace>Overriding_Overloading_Virtual</RootNamespace>
-    <AssemblyName>Overriding,Overloading,Virtual</AssemblyName>
+    <RootNamespace>Overriding_Overloading_ConstructorChaining_Virtual</RootNamespace>
+    <AssemblyName>Overriding,Overloading,ConstructorChaining,Virtual</AssemblyName>
     <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>

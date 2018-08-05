@@ -4,10 +4,10 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{20F9CE71-E059-409F-B364-119A17B3F5D1}</ProjectGuid>
+    <ProjectGuid>{103CD7A7-CF46-492A-B1A9-7C15B0A6499E}</ProjectGuid>
     <OutputType>Exe</OutputType>
-    <RootNamespace>Overriding_Overloading_Virtual</RootNamespace>
-    <AssemblyName>Overriding,Overloading,Virtual</AssemblyName>
+    <RootNamespace>Encapsulation_Reflection</RootNamespace>
+    <AssemblyName>Encapsulation,Reflection</AssemblyName>
     <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
@@ -42,11 +42,9 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Person.cs" />
+    <Compile Include="Player.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Student.cs" />
-    <Compile Include="Teacher.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />

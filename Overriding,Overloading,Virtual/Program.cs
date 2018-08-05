@@ -10,8 +10,13 @@ namespace Overriding_Overloading_Virtual
     {
         static void Main(string[] args)
         {
-            
+          var person = new Person("Daniel","Åhlin");
+          //var student = new Student();
+          //var teacher = new Teacher();
 
-        }
+            person.PrintFullName();
+            //student.PrintFullName();           
+            //teacher.PrintFullName();
+        }  
     }
 }
