@@ -11,6 +11,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Overriding,Overloading,Cons
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Encapsulation,Reflection", "Encapsulation,Reflection\Encapsulation,Reflection.csproj", "{103CD7A7-CF46-492A-B1A9-7C15B0A6499E}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Delegates", "Delegates\Delegates.csproj", "{970A54F2-4738-4487-B2E2-30047899C871}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Generics", "Generics\Generics.csproj", "{6BFFBA18-F02A-465E-A22C-E15F3A8E784F}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -33,6 +37,14 @@ Global
 		{103CD7A7-CF46-492A-B1A9-7C15B0A6499E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{103CD7A7-CF46-492A-B1A9-7C15B0A6499E}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{103CD7A7-CF46-492A-B1A9-7C15B0A6499E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{970A54F2-4738-4487-B2E2-30047899C871}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{970A54F2-4738-4487-B2E2-30047899C871}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{970A54F2-4738-4487-B2E2-30047899C871}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{970A54F2-4738-4487-B2E2-30047899C871}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6BFFBA18-F02A-465E-A22C-E15F3A8E784F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6BFFBA18-F02A-465E-A22C-E15F3A8E784F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6BFFBA18-F02A-465E-A22C-E15F3A8E784F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6BFFBA18-F02A-465E-A22C-E15F3A8E784F}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

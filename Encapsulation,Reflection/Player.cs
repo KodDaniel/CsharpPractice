@@ -19,7 +19,7 @@ namespace Encapsulation_Reflection
         #region Logik implementerad i get-och set-blocken
         //  Du kan ej hämta ut ett värde som mindre än 0 och du kan ej sätta ett värde som är mindre än 0
         // Notera att vad som är private och vad som är public.
-        private int _Salary = 0;
+        private int _Salary;
         public int Salary
         {
             get
