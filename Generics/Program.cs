@@ -14,8 +14,7 @@ namespace Generics
         static void Main(string[] args)
         {
          
-            GenericClass<decimal,char> obj = new GenericClass<decimal, char>(223233, 'A');
-
+            GenericClass<string,int> obj = new GenericClass<string, int>("2018",5123);
             obj.Print();
             Console.ReadLine();
         }
