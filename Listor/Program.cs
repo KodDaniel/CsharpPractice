@@ -13,43 +13,22 @@ namespace Listor
             // Skapar lista
             List<AdultTeam> modoFiveList = new List<AdultTeam>(4);
 
-            // Skapar mina objekt
-            AdultTeam player1 = new AdultTeam()
-            {
-                Id = 111132,
-                Position = "Defense",
-                Name = "Victor Hedman",
-                Salary = 200000
-            };
 
-            AdultTeam player2 = new AdultTeam()
-            {
-                Id = 22,
-                Position = "Defense",
-                Name = "Tobias Enström",
-                Salary = 100000
-            };
-            AdultTeam player3 = new AdultTeam()
-            {
-                Id = 323,
-                Position = "Left Wing",
-                Name = "Markus Näslund",
-                Salary = 80000000
-            };
-            AdultTeam player4 = new AdultTeam()
-            {
-                Id = 334,
-                Position = "Center",
-                Name = "Peter Forsberg",
-                Salary = 90000000
-            };
-            AdultTeam player5 = new AdultTeam()
-            {
-                Id = 35,
-                Position = "Right Wing",
-                Name = "Niklas Sundström",
-                Salary = 7000000
-            };
+            // Skapar mina objekt
+            AdultTeam player1 = new AdultTeam() {  Id = 111132, Position = "Defense",Name = "Victor Hedman",Salary = 200000 };
+
+            AdultTeam player2 = new AdultTeam() { Id = 22, Position = "Defense", Name = "Tobias Enström", Salary = 100000 };
+
+            AdultTeam player3 = new AdultTeam() { Id = 323, Position = "Left Wing", Name = "Markus Näslund",  Salary = 80000000 };
+
+            AdultTeam player4 = new AdultTeam() { Id = 334,  Position = "Center", Name = "Peter Forsberg", Salary = 90000000 };
+
+            AdultTeam player5 = new AdultTeam()  {  Id = 35,    Position = "Right Wing",  Name = "Niklas Sundström",Salary = 7000000 };
+
+
+
+
+
 
             // Lägger in objekten i min lista
             modoFiveList.Add(player1);
@@ -69,62 +48,62 @@ namespace Listor
 
             };
 
-            //// Testar att lägga till det i listan
-            ////modoFiveList.Add(junior1);
+            // Testar att lägga till det i listan
+            //modoFiveList.Add(junior1);
 
-            //// Lägger in junioren längst ned i listan med hjälp av "Insert-Metoden". Till skillnad från Add-metoden så kan jag specifiera var jag vill lägga in mitt objekt.
-            //modoFiveList.Insert(5,junior1);
+            // Lägger in junioren längst ned i listan med hjälp av "Insert-Metoden". Till skillnad från Add-metoden så kan jag specifiera var jag vill lägga in mitt objekt.
+            modoFiveList.Insert(5, junior1);
 
-            //// Skapar for-each loop för utskrift
-            //foreach (AdultTeam p in modoFiveList)
-            //{
-            //    Console.WriteLine("Id = {0}, Position = {1}, Namn= {2}, Lön= {3}",p.Id,p.Position,p.Name,p.Salary);
-            //}
-            //Console.ReadLine();
+            // Skapar for-each loop för utskrift
+            foreach (AdultTeam p in modoFiveList)
+            {
+                Console.WriteLine("Id = {0}, Position = {1}, Namn= {2}, Lön= {3}", p.Id, p.Position, p.Name, p.Salary);
+            }
+            Console.ReadLine();
 
-            //// Undersöker på vilket index (position) i listan Peter Forsberg (player4) finns med hjälp av metoden "IndexOf".
-            //// Noter att IndefOf-metoden kan overloads med mer specifika argument som kan specificera var någonstans i listan sökningen ska börja...
-            ////.. samt hur många element från angivet startindex som ska gås igenom.
-            //Console.WriteLine("Peter Forsberg befinner sig på position " + modoFiveList.IndexOf(player4));
-            //Console.ReadLine();
+            // Undersöker på vilket index (position) i listan Peter Forsberg (player4) finns med hjälp av metoden "IndexOf".
+            // Noter att IndefOf-metoden kan overloads med mer specifika argument som kan specificera var någonstans i listan sökningen ska börja...
+            //.. samt hur många element från angivet startindex som ska gås igenom.
+            Console.WriteLine("Peter Forsberg befinner sig på position " + modoFiveList.IndexOf(player4));
+            Console.ReadLine();
 
-            //// Kollar om Peter Forsberg (player4) finns i listan med hjälp av Contains-metoden (som returnerar true eller false). 
-            //if (modoFiveList.Contains(player4))
-            //{
-            //    Console.WriteLine("Peter Forsberg finns i listan");
-            //}
-            //else
-            //{
-            //    Console.WriteLine("Peter Forsberg finns INTE i listan");
+            // Kollar om Peter Forsberg (player4) finns i listan med hjälp av Contains-metoden (som returnerar true eller false). 
+            if (modoFiveList.Contains(player4))
+            {
+                Console.WriteLine("Peter Forsberg finns i listan");
+            }
+            else
+            {
+                Console.WriteLine("Peter Forsberg finns INTE i listan");
 
-            //}
-            //Console.ReadLine();
+            }
+            Console.ReadLine();
 
-            //  // Kollar om det finns spelare som tjänar 7000000 i listan med hjälp av Exist-metoden (som returnerar true eller false)
-            //  if (modoFiveList.Exists(a => a.Name.StartsWith("Ni")))
-            //  {
-            //      Console.WriteLine("Det finns en person i listan vars namn börjar med strängen Ni");
-            //  }
-            //  else
-            //  {
-            //      Console.WriteLine("Det finns INTE en person i listan vars namn börjar med strängen Ni");
+            // Kollar om det finns spelare som tjänar 7000000 i listan med hjälp av Exist-metoden (som returnerar true eller false)
+            if (modoFiveList.Exists(a => a.Name.StartsWith("Ni")))
+            {
+                Console.WriteLine("Det finns en person i listan vars namn börjar med strängen Ni");
+            }
+            else
+            {
+                Console.WriteLine("Det finns INTE en person i listan vars namn börjar med strängen Ni");
 
-            //  }
-            //  Console.ReadLine();
+            }
+            Console.ReadLine();
 
-            //// Notera att Exist-metoden bara returnerar en boleean, true eller false. Vi vill ha ett värde tillbaka, dvs det...
-            // //...objekt som stämmer överens med vårt villkor. För detta använder vi Find-metoden!
-            // // Notera att vi skapar ett objekt för att lagra vårt resultat då Find-metoden ju returnerar ett värde.
-            // AdultTeam result =  modoFiveList.Find(a => a.Name.StartsWith("Ni"));
+            // Notera att Exist-metoden bara returnerar en boleean, true eller false. Vi vill ha ett värde tillbaka, dvs det...
+            //...objekt som stämmer överens med vårt villkor. För detta använder vi Find-metoden!
+            // Notera att vi skapar ett objekt för att lagra vårt resultat då Find-metoden ju returnerar ett värde.
+            AdultTeam result = modoFiveList.Find(a => a.Name.StartsWith("Ni"));
 
-            //  Console.WriteLine("Id = {0}, Position = {1}, Namn= {2}, Lön= {3}", result.Id, result.Position, result.Name, result.Salary);
-            //  Console.ReadLine();
+            Console.WriteLine("Id = {0}, Position = {1}, Namn= {2}, Lön= {3}", result.Id, result.Position, result.Name, result.Salary);
+            Console.ReadLine();
 
             //Skapar en ny separat lista för att testa om jag kan slå ihop dom.
 
             List<JuniorTeam> juniorList = new List<JuniorTeam>(3);
 
-            // Skapar objekt
+            //Skapar objekt
             JuniorTeam junior2 = new JuniorTeam()
             {
                 Id = 13,
@@ -155,18 +134,18 @@ namespace Listor
 
             };
 
-            // Lägger in de objekten i listan
+            //Lägger in de objekten i listan
             juniorList.Add(junior4);
             juniorList.Add(junior2);
             juniorList.Add(junior3);
 
-            ////Dubbelkollar vad jag har i modo-FivelIST nu genom att skriva ut det.
-            //Console.WriteLine("Listan INNAN ihopslagning:");
-            //foreach (AdultTeam p in modoFiveList)
-            //{
-            //    Console.WriteLine("Id = {0}, Position = {1}, Namn= {2}, Lön= {3}",p.Id, p.Position, p.Name, p.Salary);
-            //}
-            //Console.ReadLine();
+            //Dubbelkollar vad jag har i modo-FivelIST nu genom att skriva ut det.
+            Console.WriteLine("Listan INNAN ihopslagning:");
+            foreach (AdultTeam p in modoFiveList)
+            {
+                Console.WriteLine("Id = {0}, Position = {1}, Namn= {2}, Lön= {3}", p.Id, p.Position, p.Name, p.Salary);
+            }
+            Console.ReadLine();
 
             //Testar nu metoden Add-range. Jag gör detta genom att slå ihop listorna "juniorList" och "modoFiveList" till en och samma lista som jag kallar "mergedList".
 
@@ -181,67 +160,67 @@ namespace Listor
 
             Console.ReadLine();
 
-            // //  Vi vill nu ta bort alla som från listan som har positionen center. Det borde innebära att Peter Forsberg och David Gunarsson raderas från listan.
-            // modoFiveList.RemoveAll(a => a.Position == "Center");
+            //  Vi vill nu ta bort alla som från listan som har positionen center. Det borde innebära att Peter Forsberg och David Gunarsson raderas från listan.
+            modoFiveList.RemoveAll(a => a.Position == "Center");
 
 
-            // Console.WriteLine("Listan EFTER ATT HA TAGIT BORT ALLA CENTRAR:");
+            Console.WriteLine("Listan EFTER ATT HA TAGIT BORT ALLA CENTRAR:");
 
-            // foreach (AdultTeam p in modoFiveList)
-            // {
-            //     Console.WriteLine("Id = {0}, Position = {1}, Namn= {2}, Lön= {3}", p.Id, p.Position, p.Name, p.Salary);
-            // }
-            // Console.ReadLine();
+            foreach (AdultTeam p in modoFiveList)
+            {
+                Console.WriteLine("Id = {0}, Position = {1}, Namn= {2}, Lön= {3}", p.Id, p.Position, p.Name, p.Salary);
+            }
+            Console.ReadLine();
 
-            // //Vi vill hämta och skriva ut de TRE första spelarna från listan "modoFiveList!
-            //List<AdultTeam> threeFirstPlayerList = modoFiveList.GetRange(0, 3);
+            //Vi vill hämta och skriva ut de TRE första spelarna från listan "modoFiveList!
+            List<AdultTeam> threeFirstPlayerList = modoFiveList.GetRange(0, 3);
 
-            // Console.WriteLine("De tre första spelarna i listan:");
+            Console.WriteLine("De tre första spelarna i listan:");
 
-            // foreach (AdultTeam p in threeFirstPlayerList)
-            // {
-            //     Console.WriteLine("Id = {0}, Position = {1}, Namn= {2}, Lön= {3}", p.Id, p.Position, p.Name, p.Salary);
-            // }
-            // Console.ReadLine();
+            foreach (AdultTeam p in threeFirstPlayerList)
+            {
+                Console.WriteLine("Id = {0}, Position = {1}, Namn= {2}, Lön= {3}", p.Id, p.Position, p.Name, p.Salary);
+            }
+            Console.ReadLine();
 
-            // Listan sorterade efter namn
+            //Listan sorterade efter namn
 
-            //modoFiveList.Sort();
-            //Console.WriteLine("Listan sorterade efter namn");
+            modoFiveList.Sort();
+            Console.WriteLine("Listan sorterade efter namn");
 
-            //foreach (AdultTeam p in modoFiveList)
-            //{
-            //    Console.WriteLine("Id = {0}, Position = {1}, Namn= {2}, Lön= {3}", p.Id, p.Position, p.Name, p.Salary);
-            //}
+            foreach (AdultTeam p in modoFiveList)
+            {
+                Console.WriteLine("Id = {0}, Position = {1}, Namn= {2}, Lön= {3}", p.Id, p.Position, p.Name, p.Salary);
+            }
 
-            //Console.ReadLine();
+            Console.ReadLine();
 
-            //// Sorterar i salary i reverse-ordning med hjälp av classen "SortBySalary".
+            // Sorterar i salary i reverse-ordning med hjälp av classen "SortBySalary".
 
-            //SortBySalary sortBySalary = new SortBySalary();
-            //modoFiveList.Sort(sortBySalary);
+            SortBySalary sortBySalary = new SortBySalary();
+            modoFiveList.Sort(sortBySalary);
 
-            //Console.WriteLine("Listan efter lön i stigande ordning");
+            Console.WriteLine("Listan efter lön i stigande ordning");
 
-            //foreach (AdultTeam p in modoFiveList)
-            //{
-            //    Console.WriteLine("Id = {0}, Position = {1}, Namn= {2}, Lön= {3}", p.Id, p.Position, p.Name, p.Salary);
-            //}
-            //Console.ReadLine();
+            foreach (AdultTeam p in modoFiveList)
+            {
+                Console.WriteLine("Id = {0}, Position = {1}, Namn= {2}, Lön= {3}", p.Id, p.Position, p.Name, p.Salary);
+            }
+            Console.ReadLine();
 
-            //modoFiveList.Reverse();
-            //Console.WriteLine("Listan efter lön i sjunkande ordning");
+            modoFiveList.Reverse();
+            Console.WriteLine("Listan efter lön i sjunkande ordning");
 
-            //foreach (AdultTeam p in modoFiveList)
-            //{
-            //    Console.WriteLine("Id = {0}, Position = {1}, Namn= {2}, Lön= {3}", p.Id, p.Position, p.Name, p.Salary);
-            //}
-            //Console.ReadLine();
+            foreach (AdultTeam p in modoFiveList)
+            {
+                Console.WriteLine("Id = {0}, Position = {1}, Namn= {2}, Lön= {3}", p.Id, p.Position, p.Name, p.Salary);
+            }
+            Console.ReadLine();
 
-            // Testar "TrueForAll-metoden" genom att testa om alla har en lön över 300.
+            //Testar "TrueForAll-metoden" genom att testa om alla har en lön över 300.
 
-            //Console.WriteLine("Har alla medlemmar i listan en lön över 300?. Svar: " + modoFiveList.TrueForAll(a => a.Salary > 300));
-            //Console.ReadLine();
+           Console.WriteLine("Har alla medlemmar i listan en lön över 300?. Svar: " + modoFiveList.TrueForAll(a => a.Salary > 300));
+            Console.ReadLine();
 
             //DICTIONARY
 
