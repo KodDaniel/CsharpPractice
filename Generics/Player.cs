@@ -6,6 +6,8 @@ using System.Threading.Tasks;
 
 namespace Generics
 {
+     // Klass för listor som finns längst ner i program.cs
+
     class Player
     {
         public int Id { get; set; }
